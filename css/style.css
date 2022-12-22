@@ -53,7 +53,8 @@ h3 {
 
 h5 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem; 
+    /*font-size: 28 px; */
     letter-spacing: 4.75px;
 
 }
@@ -146,6 +147,7 @@ h5 {
     width: 80%;
 }
 
+
 /* Body Right Section  */
 
 .right-text {
@@ -177,4 +179,80 @@ h5 {
     line-height: 37px;
     letter-spacing: 2px;
     padding: 118.5px 64.5px;
+}
+
+
+@media(max-width:900px){
+    .main-body {
+        /* margin: 200px 165px 131px; */
+        margin: 50px 20px;
+        text-align: center;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: url('../assets/home/background-home-mobile.jpg') no-repeat center center/cover;
+        opacity: 0.89;
+        z-index: -1;
+    }
+
+    .hr-grey {
+        width: 0%;
+        height: 0px;
+    }
+
+    .right-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle {
+        background-color: #fff;
+        border-radius: 50%;
+        height: 150px;
+        position: relative;
+        top: 50px;
+        width: 150px;
+        /* margin-left: 20px; */
+        margin: auto;
+    }
+
+    h5 {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+    
+    .left-text {
+        margin: 0;
+
+    }
+
+    .text-description {
+        font-size: 18px; 
+        width: 100%;
+        padding: 20% 5% 3%;
+        font-size: 15px;
+    }
+
+    .explore-text {
+        color: #0B0D17;
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 37px;
+        letter-spacing: 2px;
+        /* padding: 118.5px 64.5px; */
+        padding: 60px 32px;
+    }
+    
 }
